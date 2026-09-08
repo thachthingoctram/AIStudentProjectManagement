@@ -10,6 +10,8 @@ const groupRoutes = require("./groupRoutes");
 const groupMemberRoutes = require("./groupMemberRoutes");
 const topicRoutes = require("./topicRoutes");
 const projectRoutes = require("./projectRoutes");
+const submissionRequirementRoutes = require("./submissionRequirementRoutes");
+const submissionRoutes = require("./submissionRoutes");
 
 const router = express.Router();
 
@@ -23,5 +25,7 @@ router.use("/groups", groupRoutes);
 router.use("/group-members", groupMemberRoutes);
 router.use("/topics", topicRoutes);
 router.use("/projects", projectRoutes);
+router.use("/submission-requirements", submissionRequirementRoutes);
+router.use("/submissions", submissionRoutes);
 
 module.exports = router;
