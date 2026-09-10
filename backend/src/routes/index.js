@@ -12,6 +12,7 @@ const topicRoutes = require("./topicRoutes");
 const projectRoutes = require("./projectRoutes");
 const submissionRequirementRoutes = require("./submissionRequirementRoutes");
 const submissionRoutes = require("./submissionRoutes");
+const progressRoutes = require("./progressRoutes");
 
 const router = express.Router();
 
@@ -27,5 +28,6 @@ router.use("/topics", topicRoutes);
 router.use("/projects", projectRoutes);
 router.use("/submission-requirements", submissionRequirementRoutes);
 router.use("/submissions", submissionRoutes);
+router.use("/progress", progressRoutes);
 
 module.exports = router;
