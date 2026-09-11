@@ -17,6 +17,8 @@ const gradeRoutes = require("./gradeRoutes");
 const documentRoutes = require("./documentRoutes");
 const aiAnalysisRoutes = require("./aiAnalysisRoutes");
 const aiRiskRoutes = require("./aiRiskRoutes");
+const aiChatHistoryRoutes = require("./aiChatHistoryRoutes");
+const notificationRoutes = require("./notificationRoutes");
 
 const router = express.Router();
 
@@ -37,5 +39,7 @@ router.use("/grades", gradeRoutes);
 router.use("/documents", documentRoutes);
 router.use("/ai-analysis", aiAnalysisRoutes);
 router.use("/ai-risk", aiRiskRoutes);
+router.use("/ai-chat-history", aiChatHistoryRoutes);
+router.use("/notifications", notificationRoutes);
 
 module.exports = router;
