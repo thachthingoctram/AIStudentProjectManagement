@@ -15,6 +15,7 @@ const submissionRoutes = require("./submissionRoutes");
 const progressRoutes = require("./progressRoutes");
 const gradeRoutes = require("./gradeRoutes");
 const documentRoutes = require("./documentRoutes");
+const aiAnalysisRoutes = require("./aiAnalysisRoutes");
 
 const router = express.Router();
 
@@ -33,5 +34,6 @@ router.use("/submissions", submissionRoutes);
 router.use("/progress", progressRoutes);
 router.use("/grades", gradeRoutes);
 router.use("/documents", documentRoutes);
+router.use("/ai-analysis", aiAnalysisRoutes);
 
 module.exports = router;
